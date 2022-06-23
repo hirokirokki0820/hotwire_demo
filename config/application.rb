@@ -28,10 +28,10 @@ module HotwireDemo
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-+   # タイムゾーンをTokyo（日本）にする
-+   config.time_zone = "Tokyo"
-+   # デフォルトのロケールを日本にする
-+   config.i18n.default_locale = :ja
+    # タイムゾーンをTokyo（日本）にする
+    config.time_zone = "Tokyo"
+    # デフォルトのロケールを日本にする
+    config.i18n.default_locale = :ja
 
     # Don't generate system test files.
     config.generators.system_tests = nil
