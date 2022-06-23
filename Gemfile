@@ -12,6 +12,9 @@ gem "sprockets-rails"
 # ページネーション(kaminari)
 gem "kaminari"
 
+# 検索機能の実装
+gem "ransack"
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
