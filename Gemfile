@@ -15,6 +15,9 @@ gem "kaminari"
 # 検索機能の実装
 gem "ransack"
 
+# Bootstrap 用のフォーム
+gem "bootstrap_form"
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
