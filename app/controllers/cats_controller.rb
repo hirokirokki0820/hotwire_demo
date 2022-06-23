@@ -44,8 +44,7 @@ class CatsController < ApplicationController
   # PATCH/PUT /cats/1
   def update
     if @cat.update(cat_params)
-      # リダイレクトを削除（リダイレクトがないと暗黙的に`render`が実行される）
-      # redirect_to @cat, notice: "ねこを更新しました。"
+      flash.now.notice = "ねこを更新しました。"
     else
       render :edit, status: :unprocessable_entity
     end

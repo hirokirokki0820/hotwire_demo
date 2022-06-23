@@ -1,9 +1,5 @@
-<%# renderを省略する場合 %>
 <%= turbo_stream.replace @cat %>
 
-<%# renderを省略しない場合 %>
-<%# partialとlocalsは@catから推測できるため、通常は省略される %>
-<%#= turbo_stream.replace @cat do %>
-  <%#= render partial: "cats/cat",
-             locals: { cat: @cat } %>
-<%# end %>
+<%#= application_helper.rb で定義したメソッド %>
+<%= turbo_stream_flash %>
+<%#= turbo_stream.update "flash", partial: "flash" %>
