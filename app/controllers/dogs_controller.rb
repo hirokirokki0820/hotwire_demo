@@ -3,7 +3,9 @@ class DogsController < ApplicationController
 
   # GET /dogs
   def index
-    @dogs = Dog.all
+    @search = Dog.ransack(params[:q])
+    @search.sorts = 'id desc' if @search.sorts.empty?
+    @dogs = @search.result.page(params[:page])
   end
 
   # GET /dogs/1

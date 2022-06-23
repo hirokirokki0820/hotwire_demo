@@ -1,5 +1,5 @@
 # 参考: https://nekorich.com/cat-names
-Cat.create(
+Dog.create(
   [
     {name: "アーチー", age: 0 },
     {name: "アーロ", age: 1 },

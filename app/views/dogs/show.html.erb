@@ -3,8 +3,8 @@
 <%= render @dog %>
 
 <div>
-  <%= link_to "Edit this dog", edit_dog_path(@dog) %> |
-  <%= link_to "Back to dogs", dogs_path %>
+  <%= link_to "編集", edit_dog_path(@dog) %> |
+  <%= link_to "戻る", dogs_path %>
 
-  <%= button_to "Destroy this dog", @dog, method: :delete %>
+  <%= button_to "削除", @dog, method: :delete %>
 </div>
