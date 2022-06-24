@@ -26,7 +26,7 @@ class DogsController < ApplicationController
     @dog = Dog.new(dog_params)
 
     if @dog.save
-      redirect_to @dog, notice: "Dog was successfully created."
+      flash.now.notice = "いぬを登録しました。"
     else
       render :new, status: :unprocessable_entity
     end
@@ -35,7 +35,7 @@ class DogsController < ApplicationController
   # PATCH/PUT /dogs/1
   def update
     if @dog.update(dog_params)
-      redirect_to @dog, notice: "Dog was successfully updated."
+      flash.now.notice = "いぬを更新しました。"
     else
       render :edit, status: :unprocessable_entity
     end
@@ -44,7 +44,7 @@ class DogsController < ApplicationController
   # DELETE /dogs/1
   def destroy
     @dog.destroy
-    redirect_to dogs_url, notice: "Dog was successfully destroyed."
+    flash.now.notice = "いぬを削除しました。"
   end
 
   private
